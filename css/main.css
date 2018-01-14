@@ -1,0 +1,94 @@
+/* HTML Element Styles  */
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    margin: 1;
+    font: 1em Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+h1 {
+    font-size: 5.625rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 3.3125em;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0 0 .5em;
+}
+//h3{}
+p {
+    margin: .5em;
+    text-align: justify;
+}
+
+/* Psudo classes */
+a: link {
+    text-decoration: none;
+    color: burlywood;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: limegreen;
+}
+
+a:active {
+    color: red;
+}
+
+
+/* Main Styles */
+
+.header {  
+    color: white;
+    background-color: bisque;
+    background-image: url("../img/LouisvilleKyCity.jpg") ;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    padding: 1em 0 6em 0;
+}
+
+.header img {
+    margin-top: 0;
+    margin-left: 1em;
+}
+
+.header h1, nav {
+    text-align: center;
+}
+
+.logo {
+    //text-align: center;
+}
+
+#banner {
+    //text-align: center;
+}
+
+.main-content {
+    
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1000px;
+}
+#main-intro {
+    text-align: center;
+}
+
+.activity {
+    display: inline-block;
+}
+
