@@ -6,79 +6,76 @@
     <meta charset="utf-8">
     <meta name="Author" content="Dhanapala Godage">
     <!--adding stylesheet-->
-    <!--<link rel="stylesheet" href="css/fa-brands.min.css">-->
-    <link rel="stylesheet" href="css/lcg-style.css" type="text/css">
+    <link rel="stylesheet" href="css/fa-brands.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
     <!--Begin Header -->
-    <header class="header">
-        <img class="logo" src="img/LouvCityLogo.png">
-        <h1>Louisville City Guide</h1>
-        <!--Begin Navigation Menu -->
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Food</li>
-                <li>Museum</li>
-                <li>Entertainment</li>
-                <li>Events</li>
-                <li>Hotels</li>
-            </ul>
-        </nav>
-        <!--End Navigation Menu -->
+    <header class="header-top">
+        <div class="container">
+            <img src="img/LouvCityLogo.png">
+            <h1 class="name">Louisville City Guide</h1>
+            <!--Begin Navigation Menu -->
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Food</a></li>
+                    <!-- Derby Pie, Burbon cacke, Wide Variety Pizza, Chinease, Seafood, Mexican, Italian, Indian, Papa Johns, KFC-->
+                    <li><a href="#">Activities</a></li>
+                    <!-- Museum, Zoo, MegaCavern, Burban Trail-->
+                    <li><a href="#">Entertainment</a></li>
+                    <!-- 4th street, Kentucky Kingdom-->
+                    <li><a href="#">Events</a></li>
+                    <!-- Derby, Thunder, Worldfest, Pegases Parade-->
+                    <li><a href="#">Hotels</a></li>
+                    <!-- Brown Hotel, Galt House, Seelbach Hilton, Embassy Suites By Hilton-->
+                </ul>
+            </nav>
+            <!--End Navigation Menu -->
+        </div>
     </header>
     <!--End Header -->
 
-    <!--Begin Main Content -->
-    <div class="main-content">
-        <!--Begin Banner Section-->
-        <section id="banner">
+    <!--Begin Main Content 
+    <div class="wrapper">-->
+    <!--Begin Banner Section-->
+    <section>
+        <div class="container main-intro">
             <h2>W E L C O M E <br> to Louisville City</h2>
-            <div>
+            <p>Louisville in Kentucky, a city that has something for everyone. If you’re coming with your children, check out the Kentucky Science Center, the Louisville Zoo, or Louisville’s Waterfront Park. All of these activities are sure to keep your
+                kids having a ton of fun! If you’re coming with your spouse or significant other, there is even more things to do in Louisville. Check out great brunch spots in NuLu or the Highlands, watch a race at Churchill Downs, or grab a drink along
+                the Bourbon Trail. If you’re the adventurous type, try a tour of Louisville’s Mega Caverns, which includes a zip line course and underground bike course. No matter who you are coming to Louisville with, there’s a fun time to be had by
+                everyone!
+            </p>
+        </div>
+    </section>
+    <!--End Intro Section -->
 
-            </div>
-        </section>
-        <!--End Banner Section-->
+    <!--Begin picture intro section-->
+    <section>
+        <div class="container">
+            <a href=""> <span><img src="img/LouvFood.jpg"></span></a>
 
-        <!--Begin Intro Section -->
-        <section>
-            <div id="main-intro">
-                <p>Louisville in Kentucky, a city that has something for everyone. If you’re coming with your children, check out the Kentucky Science Center, the Louisville Zoo, or Louisville’s Waterfront Park. All of these activities are sure to keep your
-                    kids having a ton of fun! If you’re coming with your spouse or significant other, there is even more things to do in Louisville. Check out great brunch spots in NuLu or the Highlands, watch a race at Churchill Downs, or grab a drink
-                    along the Bourbon Trail. If you’re the adventurous type, try a tour of Louisville’s Mega Caverns, which includes a zip line course and underground bike course. No matter who you are coming to Louisville with, there’s a fun time to
-                    be had by everyone!
-                </p>
-            </div>
-        </section>
-        <!--End Intro Section -->
+            <a href=""> <span><img src="img/LouvGaltHouse.jpg"></span></a>
 
-        <!--Begin picture intro section-->
-        <section class="activity">
-            <div>
-                <a href=""> <span><img src="img/LouvFood.jpg"></span></a>
+            <a href=""> <span><img src="img/Louv4thStreetLive.jpg"></span></a>
 
-            </div>
-            <div>
-                <a href=""> <span><img src="img/LouvGaltHouse.jpg"></span></a>
-            </div>
-            <div>
-                <a href=""> <span><img src="img/Louv4thStreetLive.jpg"></span></a>
-            </div>
-            <div>
-                <a href=""> <span><img src="img/LouvThunder.jpg"></span></a>
-            </div>
-            <div>
-                <a href=""> <span><img src="img/LouvSlugger.jpg"></span></a>
-            </div>
-            <div>
-                <a href=""> <span><img src="img/LouvAmusementPark.jpg"></span></a>
-            </div>
-        </section>
-        <!--End picture intro section-->
+            <a href=""> <span><img src="img/LouvThunder.jpg"></span></a>
 
-        <!--Begin Events Section-->
-        <section>
+            <a href=""> <span><img src="img/LouvSlugger.jpg"></span></a>
+
+            <a href=""> <span><img src="img/LouvAmusementPark.jpg"></span></a>
+
+        </div>
+    </section>
+    <!--End picture intro section-->
+
+    <!--Begin Events Section-->
+    <section>
+        <div class="container">
             <div>
                 <p>Event 1</p>
             </div>
@@ -88,9 +85,11 @@
             <div>
                 <p>Event 3</p>
             </div>
-        </section>
-        <!--End Events Section-->
+        </div>
+    </section>
+    <!--End Events Section-->
 
+    <footer class="footer-bottom">
         <!--Begin Contact Us - Provide only the Postal address-->
         <section>
             <h2>Contact Us</h2>
@@ -107,23 +106,24 @@
         <!--End Contact us -->
 
         <!--End Main Section -->
-    </div>
-    <br>
-    <footer>
-        <ul>
-            <li><a href="https://www.facebook.com/ilovelouisvilleky/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="https://www.youtube.com/watch?v=ARvOMb0j-5g" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
-            <li><a href="https://vimeo.com/76161556" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
-            <li><a href="https://github.com/CodeLouisville/Student-Resources/wiki" class="icon fa-github"><span class="label">Github</span></a></li>
-            <li><a href="https://plus.google.com/communities/111637832580476519308" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-        </ul>
-        <small>
+        <!--</div> -->
+        <br>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/ilovelouisvilleky/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=ARvOMb0j-5g" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+                <li><a href="https://vimeo.com/76161556" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
+                <li><a href="https://github.com/CodeLouisville/Student-Resources/wiki" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://plus.google.com/communities/111637832580476519308" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+            </ul>
+            <small>
             <ul>
                 <li>&copy;2018 Dhanapala Godage</li>
                 <li>Code Louisville Project</li>
             </ul>
             
         </small>
+        </div>
     </footer>
 </body>
 

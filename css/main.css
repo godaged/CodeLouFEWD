@@ -1,42 +1,44 @@
 /* HTML Element Styles  */
+
 * {
     box-sizing: border-box;
 }
-body{
-    background-color: black;
-    color: white;
-    margin: 1;
+
+body {
+    background-color: white;
     font: 1em Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 h1 {
-    font-size: 5.625rem;
+    font-size: 2.625rem;
     text-transform: uppercase;
     font-weight: bold;
-    line-height: 1.1;
+    margin-left: 1em;
 }
 
 h2 {
     font-size: 3.3125em;
     font-weight: normal;
     line-height: 1;
-    margin: 0 0 .5em;
-}
-//h3{}
-p {
-    margin: .5em;
-    text-align: justify;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
+p {
+    margin: 0;
+}
+
+
 /* Psudo classes */
-a: link {
+
+
+/*
+a:link {
     text-decoration: none;
-    color: burlywood;
 }
 
 a:visited {
     text-decoration: none;
-    color: blue;
 }
 
 a:hover {
@@ -50,45 +52,71 @@ a:active {
 
 /* Main Styles */
 
-.header {  
-    color: white;
+.header-top {
+    font-size: larger;
     background-color: bisque;
-    background-image: url("../img/LouisvilleKyCity.jpg") ;
+    background-image: url("../img/LouisvilleKyCity.jpg");
     background-repeat: no-repeat;
     background-size: auto, cover;
-    padding: 1em 0 6em 0;
+    padding: 0 0 12em 0;
 }
 
-.header img {
-    margin-top: 0;
-    margin-left: 1em;
+.name {
+    margin: 0;
 }
 
-.header h1, nav {
+.header-top img {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.main-nav {
+    margin: 0;
+}
+
+.name,
+.main-nav li {
     text-align: center;
 }
 
-.logo {
-    //text-align: center;
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+    background: white;
 }
 
-#banner {
-    //text-align: center;
+.main-intro {
+    text-align: justify;
 }
 
-.main-content {
-    
-    width: 80%;
-    margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    max-width: 1000px;
-}
-#main-intro {
+.main-intro h2 {
     text-align: center;
 }
 
-.activity {
-    display: inline-block;
+.footer-bottom {
+    background-color: bisque;
+    background-image: url("../img/LouisvilleKyCity.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    padding: 0 0 5em 0;
 }
 
+
+/*Media Queries*/
+
+@media (min-width:769px) {
+    .container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .main-nav {
+        /*Removes left margin indent*/
+        padding: 0!important;
+    }
+    .header-top img,
+    .header-top h1 {
+        /*logo and name are in one line*/
+        display: inline-block;
+    }
+}
