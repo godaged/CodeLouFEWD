@@ -8,8 +8,9 @@
     /*******HTML Selectors*******/
     
     body {
-        background-color: rgb(47, 42, 72);
+        background-color: rgb(47, 46, 77);
         font-family: Verdana, 'Segoe UI', sans-serif, "Times New Roman", serif;
+        background-image: url("../img/background2.jpg");
     }
     
     h1 {
@@ -26,22 +27,23 @@
         font-size: 2rem;
         text-transform: none;
         font-weight: bold;
-        /*margin: 0 .5em;
-        padding: 0;*/
+        margin: 0 .5em;
+        padding: 0;
     }
     
     p {
-        margin: .5rem;
+        margin-top: 0;
+        margin-right: .5rem;
+        margin-bottom: 0;
+        margin-Left: .5rem;
     }
     /*******  Custom Classes  *******/
     
     .main-header {
-        background-color: rgb(47, 46, 77);
+        /*background-color: rgb(47, 46, 77);*/
         background-image: url("../img/LouisvilleCityKy.jpg");
         background-repeat: no-repeat;
-        /*background-size: auto, cover;*/
         height: 577px;
-        /*padding: 0 0 20em 0;*/
     }
     
     .main-header h1 {
@@ -49,38 +51,61 @@
     }
     
     .main-nav {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
         background-color: rgb(80, 92, 134);
-    }
-    
-    .main-nav ul {
-        /*float nav bar elements to right*/
-        float: right;
+        margin: 0 auto 0px auto;
+        padding: 0;
+        height: 3.75rem;
+        /*60px*/
+        list-style: none;
     }
     
     .main-nav li {
-        /*Navbar item displays from left to right*/
         float: left;
-        border-right: 1px solid #bbb;
+        display: block;
+        text-align: center;
+        position: relative;
+        /*padding: .25rem;*/
+        margin-right: .3rem;
+        margin-top: .25rem;
+        /*4px=.25rem*/
+        list-style: none;
+        /*margin-right: 5px;*/
+        margin-bottom: 5px;
+        border-radius: .25rem;
     }
     
     .main-nav li a {
         display: block;
         color: white;
         font-size: 1rem;
-        text-align: center;
-        padding: 10px;
-        border-radius: 5px;
+        text-align: left;
+        padding: .625rem;
+        /*border-radius: .25rem;*/
         text-decoration: none;
+        border: .125rem solid rgb(106, 111, 131);
+        /*text-shadow: .125rem, .125rem, .125rem #fec188;*/
     }
     
     .main-nav li a:hover {
-        /*margin-top: .5rem;*/
-        color: black;
-        font-weight: bold;
-        background-color: #fec188;
+        color: white;
+        font-weight: normal;
+        background-color: rgb(52, 60, 96);
+    }
+    
+    .museum-list {
+        display: none;
+        width: 300px;
+        background: rgb(80, 92, 134);
+    }
+    
+    .museum-list img {
+        max-width: 200;
+        max-height: 229;
+    }
+    
+    .museum {
+        /* display: block; */
+        width: 100px;
     }
     
     .welcome-h2 {
@@ -88,15 +113,48 @@
         position: absolute;
         left: 0;
         right: 0;
-        margin-top: -50px;
+        margin-top: -3.125rem;
         text-align: center;
+    }
+    /*Pseudo-Elements*/
+    
+    .first-line::first-line {
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .first-line::first-letter {
+        float: left;
+        color: white;
+        font-family: "Times New Roman";
+        font-size: 3rem;
+        padding: 1px 7px;
+        background: rgb(47, 46, 77);
+        margin: 2px 10px 0 0;
+        border-radius: 15%;
+    }
+    /*Max Screen size for the body content area*/
+    
+    .screen-max-width {
+        max-width: 1200px;
+    }
+    /*background color for the body content area*/
+    
+    .background-color {
+        background: beige;
+    }
+    
+    .welcome {
+        margin: 0 auto;
+        padding: 1.25rem 2rem .25rem 2rem;
+        /*padding-top: 20px;*/
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
     }
     
     .welcome-p {
-        background: beige;
         margin: 0 auto;
-        padding: 0 .5rem;
-        max-width: 1200px;
+        padding: .5rem;
         /*border-top-right-radius: 50px;
         border-top-left-radius: 50px;*/
         text-align: justify;
@@ -104,19 +162,27 @@
     }
     
     .main-content {
-        background: beige;
         margin: 0 auto;
         padding: 0 .5rem;
-        max-width: 1200px;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
     }
     
     .pic-container {
-        padding-top: 20px;
         text-align: justify;
     }
     
     .columns {
         padding: 0 1rem;
+    }
+    /*sibling selector to target immediate sibling left margin
+    .columns+.columns {
+        padding-left: 50px;
+    }*/
+    /*attribute selector contains .jpg*/
+    
+    .columns img[src*=".jpg"] {
+        border: .125rem solid rgb(31, 29, 29);
     }
     
     .rows {
@@ -127,28 +193,32 @@
     
     .columns img {
         /*will not overlap*/
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 340px;
+        max-height: 390px;
         /*will not display in one line Does this need here????*/
         display: block;
         /*center image*/
-        margin: 0 auto;
+        margin: 20px auto;
+        border-radius: 10%;
     }
     
     .columns h3 {
         text-align: center;
+        font-weight: bold;
+        color: rgb(47, 46, 77);
+        margin-top: 20px;
     }
     
     .events {
-        background: beige;
+        /*background: beige;*/
         margin: 0 auto;
         padding: 0 .5rem;
-        max-width: 1200px;
     }
     
     .main-footer {
         /*background-color: bisque;*/
-        background-color: rgb(42, 41, 73);
+        background-color: rgb(47, 46, 77);
+        ;
         background-image: url("../img/New BridgeAtNight.jpg");
         background-repeat: no-repeat;
         /*background-size: auto, cover;*/
@@ -182,9 +252,23 @@
         .columns {
             width: 50%;
         }
+        .columns img {
+            max-width: 240px;
+            max-height: 275px;
+        }
     }
     
-    @media (min-width:900px) {
+    @media (min-width:900px) and (max-width:1200px) {
+        .columns {
+            width: 33.33%;
+        }
+        .columns img {
+            max-width: 240px;
+            max-height: 275px;
+        }
+    }
+    
+    @media (min-width:1200px) {
         .columns {
             width: 33.33%;
         }
