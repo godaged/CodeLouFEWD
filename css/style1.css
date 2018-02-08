@@ -9,10 +9,9 @@
     
     body {
         /* margin-left: 16px; */
-        /* background-color: rgb(47, 46, 77); */
+        background-color: rgb(47, 46, 77);
         font-family: Verdana, 'Segoe UI', sans-serif, "Times New Roman", serif;
         /* background-image: url("../img/background2.jpg"); */
-        background-image: linear-gradient( #50686a, #ffffff);
     }
     
     h1 {
@@ -52,31 +51,19 @@
     }
     
     .mobile-bar {
-        width: 60px;
+        /* width: 120px; */
         font-size: 1.5rem;
         padding: 10px;
-        /* background-color: rgb(80, 92, 134); */
+        background-color: rgb(80, 92, 134);
         color: white;
         /*Mobile Screen Visible*/
         display: visible;
         transition: all 500ms linear;
     }
     
-    .mobile-barX {
-        /* width: 80px; */
-        font-size: 1.5rem;
-        padding: 10px;
-        /* background-color: rgb(80, 92, 134); */
-        color: white;
-        /*Mobile Screen Visible*/
-        display: none;
-        transition: all 500ms linear;
-    }
-    
     .main-nav {
         position: fixed;
-        /* background-color: rgb(80, 92, 134); */
-        background: rgba(55, 71, 96, 0.8);
+        background-color: rgb(80, 92, 134);
         width: 100px;
         padding: 3px;
         list-style: none;
@@ -95,8 +82,7 @@
         display: none;
         left: 90px;
         width: 300px;
-        background: rgba(55, 71, 96, 0.8);
-        /* background: rgb(80, 92, 134); */
+        background: rgb(80, 92, 134);
     }
     /* 
     .main-nav li {
@@ -246,10 +232,10 @@
         /*background-color: bisque;*/
         background-color: rgb(47, 46, 77);
         ;
-        background-image: url("../img/LouisvilleCityKy.jpg");
+        background-image: url("../img/New BridgeAtNight.jpg");
         background-repeat: no-repeat;
         /*background-size: auto, cover;*/
-        height: 407px;
+        height: 578px;
         /*padding: 0 0 20em 0;*/
     }
     
@@ -282,15 +268,14 @@
     @media screen and (min-width:650px) {
         .main-header {
             /*background-color: rgb(47, 46, 77);*/
-            background-image: url("../img/New BridgeAtNight.jpg");
+            background-image: url("../img/LouisvilleCityKy.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: inherit;
             background-size: cover;
             height: 377px;
         }
-        .mobile-bar,
-        .mobile-barX {
+        .mobile-bar {
             /*Not display at this screen size*/
             display: none;
         }
@@ -305,7 +290,7 @@
         /*NAVIGATION BAR*/
         .main-nav {
             position: relative;
-            /* background-color: rgb(80, 92, 134); */
+            background-color: rgb(80, 92, 134);
             width: 100%;
             margin: 0;
             padding: 0;
@@ -342,7 +327,7 @@
             margin: 0;
             left: 0;
             width: 300px;
-            /* background: rgb(80, 92, 134); */
+            background: rgb(80, 92, 134);
         }
         /*END NAVIGATION BAR*/
         .columns {
@@ -362,7 +347,7 @@
     @media screen and (min-width:1200px) {
         .main-header {
             /*background-color: rgb(47, 46, 77);*/
-            background-image: url("../img/New BridgeAtNight.jpg");
+            background-image: url("../img/LouisvilleCityKy.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: inherit;
