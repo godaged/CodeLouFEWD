@@ -8,10 +8,8 @@
     /*******HTML Selectors*******/
     
     body {
-        /* margin-left: 16px; */
-        background-color: rgb(47, 46, 77);
-        font-family: Verdana, 'Segoe UI', sans-serif, "Times New Roman", serif;
-        /* background-image: url("../img/background2.jpg"); */
+        font-family: Helvetica, Verdana, 'Segoe UI', sans-serif, "Times New Roman", serif;
+        /* background-image: linear-gradient( #50686a, #cbd9fe); */
     }
     
     h1 {
@@ -27,7 +25,13 @@
     h2 {
         font-size: 1rem;
         text-transform: none;
-        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h3 {
+        font-size: .75rem;
+        text-transform: none;
         margin: 0;
         padding: 0;
     }
@@ -43,120 +47,152 @@
         color: white;
     }
     /*******  Custom Classes  *******/
-    /*******  Header Navigation Classes  *******/
-    /*START NAVIGATION BAR*/
+    /*******  Header Classes  *******/
     
     .main-header {
         height: 200px;
+        /* background-image: linear-gradient( #50686a, #cbd9fe); */
+        /* gradient to match back ground colour. Fully transparent till 80% then start white color gradient & @ 100% no transparent */
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)100%), url("../img/New BridgeAtNight.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: inherit;
+        background-size: cover;
     }
+    /*******  Navigation Classes  *******/
+    /* Mobile Hamberger icon*/
     
     .mobile-bar {
-        /* width: 120px; */
+        width: 60px;
         font-size: 1.5rem;
         padding: 10px;
-        background-color: rgb(80, 92, 134);
         color: white;
-        /*Mobile Screen Visible*/
+        /*Hamberger icon Visible*/
         display: visible;
+        transition: all 500ms linear;
+    }
+    /* mobile X to close mobile menu*/
+    
+    .mobile-barX {
+        font-size: 1.5rem;
+        padding: 10px;
+        color: white;
+        /*Mobile X icon Not Visible*/
+        display: none;
         transition: all 500ms linear;
     }
     
     .main-nav {
         position: fixed;
-        background-color: rgb(80, 92, 134);
+        background: rgba(55, 71, 96, 0.8);
         width: 100px;
         padding: 3px;
         list-style: none;
         /* left: -200px; */
+        /*to hide the menu*/
         display: none;
         transition: all 500ms linear;
     }
     
     .main-nav li a {
         color: white;
+        text-decoration: none;
     }
+    /*Sub Menu Item display false*/
     
-    .museum-list {
+    .hotel-list,
+    .museum-list,
+    .food-list {
         margin-top: -25px;
         position: absolute;
         display: none;
         left: 90px;
         width: 300px;
-        background: rgb(80, 92, 134);
+        background: rgba(55, 71, 96, 0.8);
     }
-    /* 
-    .main-nav li {
-        float: left;
-        display: block;
-        text-align: center;
-        position: relative;
-        margin-right: .3rem;
-        margin-top: .25rem;
-        list-style: none;
-        margin-bottom: 5px;
-        border-radius: .25rem;
-    }
-    
-    .main-nav li a {
-        display: block;
-        color: white;
-        text-align: left;
-        padding: .625rem;
-        border: .125rem solid rgb(106, 111, 131);
-    }
-    
-    .main-nav li a:hover {
-        background-color: rgb(52, 60, 96);
-    }
-    
-    .museum {
-        width: 100px;
-    }
-    
-    .museum-list {
-        display: none;
-        width: 300px;
-        background: rgb(80, 92, 134);
-    } */
-    /*END NAVIGATION BAR*/
+    /*******END NAVIGATION BAR*********/
     /*******  Main Content Classes  *******/
     /*background color for the body content area*/
+    /***NOT WORKIN currently If needed differnet colotr than white configure here***/
     
     .background-color {
-        background: beige;
+        background-color: radial-gradient(0% 0%, 60% 60%, rgb(177, 63, 63), rgb(255, 255, 255));
     }
+    /* Welcome message */
     
     .welcome {
-        margin: 0 auto;
-        padding: 1.25rem .25rem .25rem .25rem;
-        /*padding-top: 20px;*/
-        border-top-left-radius: .5rem;
-        border-top-right-radius: .5rem;
-    }
-    
-    .welcome-h2 {
         color: white;
-        font-weight: bold;
         position: absolute;
-        left: 0;
-        right: 0;
-        margin-top: -5.125rem;
+        /* following lines will center the Welcome message text */
+        width: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+        /* following will overlay the Welcome text on the background image */
+        margin-top: -7.125rem;
+        text-align: center;
+        /* will not display @ mobile screen */
+        display: none;
+        /* following displays a round transparent background */
+        /* background-color: rgba(197, 221, 223, .3);
+        padding: 45px 0;
+        border-radius: 50%; */
+    }
+    /* Welcome message  h3*/
+    
+    .welcome h3 {
+        font-family: 'Tangerine', serif;
+        /* font-size: 100px; */
+        /* font-size: 1rem; */
         text-align: center;
     }
     
-    .welcome-p {
+    .welcome h2 {
+        font-family: 'Handlee', cursive;
+    }
+    /* slide show */
+    
+    .intro-slide-show {
+        margin: 5px auto;
+        padding: 10px;
+        text-align: center;
+        /* border: .0625rem solid rgb(31, 29, 29); */
+        border-radius: 1px;
+    }
+    
+    .intro-slide-show-img {
+        background-image: url("../img/SlideBG.jpg");
+        border-radius: 1%;
+        margin: 5px auto;
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-attachment: inherit; */
+        /* background-size: cover; */
+    }
+    
+    .intro-slide-show-img img {
+        position: inherit;
+        width: 100%;
+        height: 200px;
+        border-radius: .5%;
+        display: none;
+        margin: 0 auto;
+    }
+    /* Metro Louisville Section */
+    
+    .metro-Lou-p {
         margin: 0 auto;
         padding: .5rem;
-        /*border-top-right-radius: 50px;
-        border-top-left-radius: 50px;*/
         text-align: justify;
-        /*top: 250px; left: 150px; right: 109px; bottom: 0px;*/
     }
+    /* Make First line of each paragraph bold & italic */
     
     .first-line::first-line {
         font-weight: bold;
         font-style: italic;
     }
+    /* Drop Caps first letter */
     
     .first-line::first-letter {
         position: static;
@@ -169,58 +205,65 @@
         margin: 2px 10px 0 0;
         border-radius: 15%;
     }
-    /*Max Screen size for the body content area*/
-    /* .screen-max-width {
-        max-width: 1200px;
-    } */
+    /* Main Content of the body */
     
     .main-content {
         margin: 0 auto;
         padding: 0;
-        border-bottom-left-radius: .5rem;
-        border-bottom-right-radius: .5rem;
+        border: 1px solid rgb(221, 221, 231);
+        border-radius: .5rem;
     }
+    /* Explore Louisville Picture container */
     
     .pic-container {
         text-align: justify;
     }
     
-    .columns {
-        padding: 0 .5rem;
+    .pic-container h2 {
+        font-size: 1.5rem;
+        text-align: center;
     }
-    /*sibling selector to target immediate sibling left margin
-    .columns+.columns {
-        padding-left: 50px;
-    }*/
-    /*attribute selector contains .jpg*/
+    /* set flex-box 1 row 3 columns */
     
-    .columns img[src*=".jpg"] {
-        border: .125rem solid rgb(31, 29, 29);
-    }
-    
-    .rows {
+    .pic-rows {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
     
-    .columns img {
-        /*will not overlap*/
+    .pic-columns {
+        padding: 0 .5rem;
+    }
+    /*sibling selector to target immediate sibling left margin*/
+    /*
+    .pic-columns+.pic-columns {
+        padding-left: 50px;
+    }*/
+    /*attribute selector contains .jpg*/
+    /* all .jpg images will have a border */
+    
+    .pic-columns img[src*=".jpg"] {
+        border: .125rem solid rgb(31, 29, 29);
+    }
+    
+    .pic-columns img {
+        /*will not overlap seeting for mobile*/
         max-width: 340px;
         max-height: 390px;
-        /*will not display in one line Does this need here????*/
         display: block;
         /*center image*/
         margin: 20px auto;
-        border-radius: 10%;
+        border-radius: 3%;
     }
     
-    .columns h3 {
+    .pic-columns h3 {
+        font-size: 1.5rem;
         text-align: center;
-        font-weight: bold;
+        /* font-weight: bold; */
         color: rgb(47, 46, 77);
         margin-top: 20px;
     }
+    /* Events Section */
     
     .events {
         /*background: beige;*/
@@ -228,16 +271,21 @@
         padding: 0 .5rem;
     }
     
-    .main-footer {
-        /*background-color: bisque;*/
-        background-color: rgb(47, 46, 77);
-        ;
-        background-image: url("../img/New BridgeAtNight.jpg");
-        background-repeat: no-repeat;
-        /*background-size: auto, cover;*/
-        height: 578px;
-        /*padding: 0 0 20em 0;*/
+    .events h2 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
     }
+    /* footer section */
+    
+    .main-footer {
+        background-color: rgb(47, 46, 77);
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1)100%), url("../img/LouisvilleCityKy.jpg");
+        background-repeat: no-repeat;
+        height: 407px;
+        text-align: center;
+    }
+    /* social media icon bar */
+    /* Change ICON size at HTML class fa-2x or fa-3x*/
     
     .social-media {
         margin: 0;
@@ -246,6 +294,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        /*background-color: rgba(197, 221, 223, .3);*/
     }
     
     .social-media ul {
@@ -256,29 +305,19 @@
         color: white;
         font-size: 1rem;
         text-align: center;
-        padding: 10px;
+        padding: 5px;
         border-radius: 5px;
         text-decoration: none;
+        font-weight: bolder;
     }
-    /* 
-    (min-width:650px) 
-    (min-width:900px)
-    */
+    
+    .copy-right {
+        /*background-color: rgba(197, 221, 223, .2);*/
+    }
+    /* Media Queries  */
+    /* Min width 650 pixel and above screen size */
     
     @media screen and (min-width:650px) {
-        .main-header {
-            /*background-color: rgb(47, 46, 77);*/
-            background-image: url("../img/LouisvilleCityKy.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: inherit;
-            background-size: cover;
-            height: 377px;
-        }
-        .mobile-bar {
-            /*Not display at this screen size*/
-            display: none;
-        }
         h1 {
             /*16px = 1em*/
             font-size: 2.5rem;
@@ -287,12 +326,26 @@
             /*16px = 1em*/
             font-size: 1.5rem;
         }
+        /* main header picture size */
+        .main-header {
+            /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)100%), url("../img/New BridgeAtNight.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: inherit;
+            background-size: cover; */
+            height: 377px;
+        }
+        /* hide mobile features */
+        .mobile-bar,
+        .mobile-barX {
+            display: none;
+        }
         /*NAVIGATION BAR*/
         .main-nav {
             position: relative;
-            background-color: rgb(80, 92, 134);
+            /* background-color: rgb(80, 92, 134); */
             width: 100%;
-            margin: 0;
+            margin-left: 5px;
             padding: 0;
             left: 0;
             height: 3.75rem;
@@ -314,46 +367,61 @@
             color: white;
             text-align: left;
             padding: .625rem;
-            border: .125rem solid rgb(106, 111, 131);
+            border: .0125rem solid rgb(106, 111, 131);
         }
         .main-nav li a:hover {
-            background-color: rgb(52, 60, 96);
+            background-color: rgba(197, 221, 223, .2);
+            /* rgb(52, 60, 96); */
+        }
+        .hotel {
+            width: 75px;
         }
         .museum {
             width: 100px;
         }
-        .museum-list {
+        .food {
+            width: 70px;
+        }
+        /* sub menu */
+        .hotel-list,
+        .museum-list,
+        .food-list {
             display: none;
             margin: 0;
             left: 0;
-            width: 300px;
-            background: rgb(80, 92, 134);
+            width: 260px;
         }
         /*END NAVIGATION BAR*/
-        .columns {
+        /* Welcom message section */
+        .welcome {
+            margin-top: -11.125rem;
+            color: white;
+        }
+        .welcome h2,
+        h3 {
+            font-size: 3rem;
+            /* font-weight: bold; */
+            text-align: center;
+        }
+        .intro-slide-show-img {
+            height: 372px;
+        }
+        .intro-slide-show-img img {
+            width: 100%;
+            height: 372px;
+        }
+        /* picture container */
+        /* set up two columns */
+        .pic-columns {
             width: 50%;
         }
-        .columns img {
+        .pic-columns img {
             max-width: 95%;
             max-height: 95%;
-        }
-        .screen-max-width {
-            /* width: 70%; */
-            max-width: 1200px;
-            /* margin: 0 auto; */
         }
     }
     
     @media screen and (min-width:1200px) {
-        .main-header {
-            /*background-color: rgb(47, 46, 77);*/
-            background-image: url("../img/LouisvilleCityKy.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: inherit;
-            background-size: cover;
-            height: 577px;
-        }
         h1 {
             /*16px = 1em*/
             font-size: 2.5rem;
@@ -362,35 +430,43 @@
             /*16px = 1em*/
             font-size: 1.5rem;
         }
-        .columns {
+        /* main header section */
+        .main-header {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)100%), url("../img/New BridgeAtNight.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: inherit;
+            background-size: cover;
+            height: 577px;
+        }
+        /* hide mobile only menus */
+        .mobile-bar,
+        .mobile-barX {
+            display: none;
+        }
+        /* set up the height of the welcome message */
+        .welcome {
+            margin-top: -15.125rem;
+        }
+        /* slide show */
+        .intro-slide-show-img {
+            height: 572px;
+        }
+        .intro-slide-show-img img {
+            width: 100%;
+            height: 572px;
+        }
+        /* Explore louisville picture container */
+        .pic-columns {
             width: 33.33%;
         }
-        .columns img {
+        .pic-columns img {
             /* max-width: 240px;
             max-height: 275px; */
             max-width: 95%;
             max-height: 95%;
         }
-        /* .screen-max-width {
+        .screen-max-width {
             max-width: 1200px;
-        } */
-    }
-    /* @media (min-width:1200px) {
-        .columns {
-            width: 33.33%;
         }
-    } */
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
-    /*******    *******/
+    }

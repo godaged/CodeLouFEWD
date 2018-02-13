@@ -7,13 +7,18 @@
     <meta name="Author" content="Dhanapala Godage">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!--adding stylesheet-->
+
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- social media icons -->
     <link rel="stylesheet" href="css/fa-brands.min.css">
+    <!-- bootstrap row layout -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <!-- mobile hamberger -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Tangerine" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <!-- JQuery -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 </head>
@@ -21,7 +26,6 @@
 <body>
     <!--Begin Header -->
     <header>
-
         <div class="main-header">
             <!-- <video autoplay muted loop class="lou-video">
                <source src="img/Louisville.mp4" type="video/mp4">
@@ -29,7 +33,8 @@
             </video> -->
             <!--Begin Navigation Menu -->
             <nav>
-                <div>
+                <div class="mobile">
+                    <!-- mobile hamberger menu and X -->
                     <span class="mobile-bar">
                         <i class="fas fa-bars" aria-hidden="true"></i>
                     </span>
@@ -37,18 +42,24 @@
                         <i class="fas fa-times" aria-hidden="true"></i>
                     </span>
                 </div>
+                <!-- Main navigation menu starts -->
                 <ul class="main-nav">
                     <li><a href="#">Home</a></li>
-                    <li class="show-hotels"><a href="#">Hotels</a>
-
+                    <li class="hotel"><a href="#">Hotels</a>
+                        <!-- Hotel sub menu -->
+                        <div class="hotel-list">
+                            <a href="https://www.galthouse.com/">Galt House</a>
+                            <a href="http://www.seelbachhilton.com/">Seelbach Hilton</a>
+                            <a href="https://www.brownhotel.com/">Brown Hotel</a>
+                            <a href="https://louisville.regency.hyatt.com">HYATT REGENCY </a>
+                            <a href="http://www.sheratonlouisvilleriverside.com">Sheraton Louisville Riverside</a>
+                        </div>
                     </li>
                     <!-- Brown Hotel, Galt House, Seelbach Hilton, Embassy Suites By Hilton-->
-                    <li><a href="#">Night Life</a></li>
-                    <!-- Museum, Zoo, MegaCavern, Burban Trail-->
-                    <li><a href="#">Events</a></li>
+                    <!-- <li><a href="#">Night Life</a></li> -->
                     <!-- Derby, Thunder, Worldfest, Pegases Parade-->
                     <li class="museum"><a href="#">Museums</a>
-
+                        <!-- museum sub menu -->
                         <div class="museum-list">
                             <div><a href="https://www.sluggermuseum.com/" target="_blank">Slugger Museum</a></div>
                             <div><a href="https://www.derbymuseum.org/" target="_blank">Derby   Museum</a></div>
@@ -58,81 +69,112 @@
                             <div><a href="https://kysciencecenter.org/">Kentucky Science Center</a></div>
                             <div><a href="https://conrad-caldwell.org/">Conrad-Caldwell House Museum</a></div>
                         </div>
-
                     </li>
                     <!-- Slugger-->
-                    <li><a href="#">Leisure</a></li>
+                    <!-- <li><a href="#">Leisure</a></li> -->
                     <!-- 4th street, Kentucky Kingdom-->
-                    <li><a href="#">Food</a></li>
                     <!-- Derby Pie, Burbon cacke, Wide Variety Pizza, Chinease, Seafood, Mexican, Italian, Indian, Papa Johns, KFC-->
+                    <li class="food"><a href="#">Foods</a>
+                        <div class="food-list">
+                            <a href="http://havanarumbaonline.com">Havana Rumba</a>
+                            <a href="https://www.jackfrys.com/">Jack Fry's</a>
+                            <a href="https://www.proofonmain.com/">Proof of Main</a>
+                        </div>
+                    </li>
+                    <!-- This will go to Explore city section -->
+                    <li><a href="#pic">Explore City</a></li>
 
                 </ul>
             </nav>
-            <!-- <video width="2000" height="577" loop="loop" muted="" autoplay="autoplay" playsinline="playsinline" poster="../img/LouisvilleCityKy.jpg" id="test">
-                <source src="Adobe.mp4" type="video/mp4">                    
-            </video> -->
             <!--End Navigation Menu -->
             <h1>Louisville City Guide</h1>
         </div>
 
     </header>
     <!--End Header -->
-
     <!--Begin Main Content   -->
-    <!--Begin Banner Section-->
+    <!--Begin Welcome Banner Section-->
+    <div class="welcome">
+        <h2>Welcome to Louisville </h2>
 
-    <div class="">
-        <div class="welcome-h2">
-            <h2>WELCOME <br/>to Louisville City</h2>
-        </div>
-        <div class="welcome screen-max-width background-color">
-            <p class="first-line welcome-p ">Louisville in Kentucky, a city that has something for everyone. If you’re coming with your children, check out the Kentucky Science Center, the Louisville Zoo, or Louisville’s Waterfront Park. All of these activities are sure to keep your
-                kids having a ton of fun! If you’re coming with your spouse or significant other, there is even more things to do in Louisville. Check out great brunch spots in NuLu or the Highlands, watch a race at Churchill Downs, or grab a drink along
-                the Bourbon Trail. If you’re the adventurous type, try a tour of Louisville’s Mega Caverns, which includes a zip line course and underground bike course. No matter who you are coming to Louisville with, there’s a fun time to be had by
-                everyone!
-            </p>
-        </div>
+        <h3>Something for everyone <br/>Slugger museum, Churchil Down, 4th Stree Live <br/>Water Front Park and so much more...
+        </h3>
     </div>
+    <!--End Welcome Banner Section-->
 
-    <!--End Intro Section -->
+    <!-- starts Main body content -->
     <div class="main-content screen-max-width background-color">
-        <!--Begin picture intro section-->
-        <section>
+        <!-- City Intro starts here -->
+        <Div class="intro-slide-show">
+            <!-- slide show starts here -->
+            <div class="intro-slide-show-img">
+                <p></p>
+                <img src="img/Slide1.jpg" alt="">
+                <img src="img/Slide2.jpg" alt="">
+                <img src="img/Slide3.jpg" alt="">
+                <img src="img/Slide4.jpg" alt="">
+                <img src="img/Slide5.jpg" alt="">
+                <img src="img/Slide6.jpg" alt="">
+                <img src="img/Slide7.jpg" alt="">
+                <img src="img/Slide8.jpg" alt="">
+                <img src="img/Slide9.jpg" alt="">
+                <img src="img/Slide10.jpg" alt="">
+            </div>
+            <!-- slide show ends here -->
+
+            <div>
+                <h2>Metro Louisvelle</h2>
+                <p class="first-line metro-Lou-p">Louisville in Kentucky, a city that has something for everyone. If you’re coming with your children, check out the Kentucky Science Center, the Louisville Zoo, or Louisville’s Waterfront Park. All of these activities are sure to keep your
+                    kids having a ton of fun! If you’re coming with your spouse or significant other, there is even more things to do in Louisville. Check out great brunch spots in NuLu or the Highlands, watch a race at Churchill Downs, or grab a drink
+                    along the Bourbon Trail. If you’re the adventurous type, try a tour of Louisville’s Mega Caverns, which includes a zip line course and underground bike course. No matter who you are coming to Louisville with, there’s a fun time to
+                    be had by everyone!
+                </p>
+            </div>
+        </Div>
+        <!-- City Intro Ends here -->
+
+        <!--Begin City Explore section-->
+        <section id="pic">
             <div class="pic-container">
-                <div class="rows">
-                    <div class="columns">
+                <h2>Explore Metro Louisville</h2>
+                <div class="pic-rows">
+                    <div class="pic-columns">
                         <h3>Hotels</h3>
                         <a href=""> <span><img  src="img/LouvGaltHouse.jpg"></span></a>
                         <p class="first-line">Louisville city has several historic hotels. Among them, the Seelbach Hilton which is an architectural masterpiece began in 1869. The Brown Hotel is an opulent choice amongst travelers, visitors, and locals to the Louisville downtown
                             and specially a favorite of Kentucky Derby attendees. The 16-story historic hotel is famous for its Southern hospitality, exceptional service, and luxurious accommodations. </p>
                     </div>
-                    <div class="columns">
+
+                    <div class="pic-columns">
                         <h3>Night Life</h3>
                         <a href=""> <span><img src="img/Louv4thStreetLive.jpg"></span></a>
                         <p class="first-line">Fourth Street Live! is the entertainment and fine dining hub in the heart of downtown Louisville. You can find more than a dozen restaurants, bars, and nightlife hotspots just steps apart. The variety of venues all under one roof
                             makes Fourth Street Live! the perfect place for every event - a casual night out with friends, a bachelor or bachelorette party, a romantic first date or celebrating a special occasion.
                         </p>
                     </div>
-                    <div class="columns">
+
+                    <div class="pic-columns">
                         <h3>Events</h3>
                         <a href=""> <span><img src="img/LouvThunder.jpg"></span></a>
                         <p class="first-line">There are many events in Louisville! Thunder Over Louisville, Pegasus Parade, Derby and Baloon Fest are the famous ones attending from all over the US. Also, you can catch a Louisville Cardinals basketball game at the KFC Yum!
                             Center, or watch a performance by the Louisville Orchestra at the Kentucky Center for the Arts which hosts off-Broadway shows and musicals occasionally. </p>
                     </div>
-                    <div class="columns">
+
+                    <div class="pic-columns">
                         <h3>Museum</h3>
                         <a href=""> <span><img src="img/LouvSlugger.jpg"></span></a>
                         <p class="first-line">Louisville has many museums aimed at different crowds that will ensure a great time for anyone. The Louisville Slugger Museum which is great for baseball fans. Or you can learn about horse racing history at the Kentucky DerbyMuseum
                             which hosts one of the three Triple Crown of Thoroughbred Horse races! The Muhammed Ali Museum is located in downtown which is a dedication to the late Muhammed Ali and a must-see for everyone. </p>
                     </div>
 
-                    <div class="columns">
+                    <div class="pic-columns">
                         <h3>Leisure</h3>
                         <a href=""> <span><img src="img/LouvAmusementPark.jpg"></span></a>
                         <p class="first-line">Kentucky Kingdom, Louisville Zoo, Mega Cavern, Bourbon trail and Water Front Park are best places to spend time leasurly. Travel and Leisure magazine named Louisville as one of the best places to travel. Bourbon trail is one of
                             the populest one. When you’re traveling along the Urban Bourbon Trail, you’re in for cocktails classic and modern, live music, and the bourbon-inspired creativity of Louisville’s best bartenders and chefs.</p>
                     </div>
-                    <div class="columns">
+
+                    <div class="pic-columns">
                         <h3>Foods</h3>
                         <a href=""> <span><img src="img/LouvFood.jpg"></span></a>
                         <p class="first-line">Louisville offers a large variety of restaurants, diners, and fast food options and you will have an unimaginable amount of choices. You can choose restaurants such as Decca which offers unique dishes created from fresh-locally
@@ -140,41 +182,46 @@
                     </div>
                 </div>
             </div>
-
         </section>
-        <!--End picture intro section-->
+        <!--Ends City Explore section-->
 
         <!--Begin Events Section-->
         <section>
-            <div class="events screen-max-width ">
+            <div class="events">
+                <h2>Popular Events in Louisvelle</h2>
                 <div>
-                    <p>Event 1</p>
+                    <p>Derby Day</p>
                 </div>
                 <div>
-                    <p>Event 2</p>
+                    <p>Thunder Over Louisville</p>
                 </div>
                 <div>
-                    <p>Event 3</p>
+                    <p>Baloon Fest</p>
                 </div>
             </div>
         </section>
         <!--End Events Section-->
     </div>
+    <!-- Ends Main body content -->
+    <!--Start footer Section-->
     <footer>
         <div class="main-footer">
             <div>
+                <!-- Connect with Social media -->
                 <ul class="social-media">
-                    <li><a href="https://www.facebook.com/ilovelouisvilleky/"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-                    <li><a href="https://www.youtube.com/watch?v=ARvOMb0j-5g"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                    <li><a href="https://vimeo.com/76161556"><i class="fab fa-vimeo-square fa-3x"></i></a></li>
-                    <li><a href="https://github.com/CodeLouisville/Student-Resources/wiki"><i class="fab fa-github-square fa-3x"></i></a></li>
-                    <li><a href="https://plus.google.com/communities/111637832580476519308"><i class="fab fa-google-plus fa-3x"></i></a></li>
+                    <li><a href="">Connect Us @</a></li>
+                    <li><a href="https://www.facebook.com/ilovelouisvilleky/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ARvOMb0j-5g"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                    <li><a href="https://vimeo.com/76161556"><i class="fab fa-vimeo-square fa-2x"></i></a></li>
+                    <li><a href="https://github.com/CodeLouisville/Student-Resources/wiki"><i class="fab fa-github-square fa-2x"></i></a></li>
+                    <li><a href="https://plus.google.com/communities/111637832580476519308"><i class="fab fa-google-plus fa-2x"></i></a></li>
                 </ul>
             </div>
-            <div>
+            <div class="copy-right">
                 <ul>
                     <li>&copy;2018 Dhanapala Godage</li>
                     <li>Code Louisville Project</li>
+                    <li>Suggesions </li>
                 </ul>
             </div>
     </footer>
@@ -183,7 +230,6 @@
     <script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
     <!--End JavaScript-->
-
 </body>
 
 </html>
