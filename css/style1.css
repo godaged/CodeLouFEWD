@@ -137,17 +137,26 @@
         padding: 45px 0;
         border-radius: 50%; */
     }
-    /* Welcome message  h3*/
+    /* Welcome message  h2 & h3 */
+    
+    .welcome h2 {
+        font-family: 'Aref Ruqaa', serif;
+        /* 'Handlee', cursive; */
+    }
     
     .welcome h3 {
         font-family: 'Tangerine', serif;
         /* font-size: 100px; */
         /* font-size: 1rem; */
+        font-family: 'Oregano', cursive;
         text-align: center;
     }
     
-    .welcome h2 {
-        font-family: 'Handlee', cursive;
+    .welcome h2,
+    h3 {
+        font-size: 1rem;
+        /* font-weight: bold; */
+        text-align: center;
     }
     /* slide show */
     
@@ -310,10 +319,6 @@
         text-decoration: none;
         font-weight: bolder;
     }
-    
-    .copy-right {
-        /*background-color: rgba(197, 221, 223, .2);*/
-    }
     /* Media Queries  */
     /* Min width 650 pixel and above screen size */
     
@@ -333,7 +338,7 @@
             background-position: center;
             background-attachment: inherit;
             background-size: cover; */
-            height: 377px;
+            height: 477px;
         }
         /* hide mobile features */
         .mobile-bar,
@@ -394,13 +399,15 @@
         /*END NAVIGATION BAR*/
         /* Welcom message section */
         .welcome {
-            margin-top: -11.125rem;
+            margin-top: -14.125rem;
             color: white;
         }
-        .welcome h2,
-        h3 {
-            font-size: 3rem;
-            /* font-weight: bold; */
+        .welcome h2 {
+            font-size: 2.3rem;
+            text-align: center;
+        }
+        .welcome h3 {
+            font-size: 1.8rem;
             text-align: center;
         }
         .intro-slide-show-img {
@@ -446,7 +453,17 @@
         }
         /* set up the height of the welcome message */
         .welcome {
-            margin-top: -15.125rem;
+            margin-top: -17.125rem;
+        }
+        .welcome h2 {
+            font-size: 2.5rem;
+            /* font-weight: bold; */
+            text-align: center;
+        }
+        .welcome h3 {
+            font-size: 2rem;
+            /* font-weight: bold; */
+            text-align: center;
         }
         /* slide show */
         .intro-slide-show-img {
