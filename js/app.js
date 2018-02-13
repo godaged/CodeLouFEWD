@@ -26,26 +26,26 @@ $(".food").mouseout(function() {
 
 //Click Hamberger to show mobile menu
 $(".mobile-bar").click(function() {
-    $(".mobile-barX").show()
-    $(".main-nav").show()
+    $(".mobile-barX").show();
+    $(".main-nav").show();
 });
 
 //Click X to hide mobile menu
 $(".mobile-barX").click(function() {
-    $(".main-nav").hide()
-    $(".mobile-barX").hide()
+    $(".main-nav").hide();
+    $(".mobile-barX").hide();
 });
 
 // Hide & show menu & welcome banner when resizing the webpage
 $(window).resize(function() {
     if ($(window).width() >= 650) {
-        $(".main-nav").show()
-        $(".welcome").show()
-        $(".mobile-barX").hide()
+        $(".main-nav").show();
+        $(".welcome").show();
+        $(".mobile-barX").hide();
     } else {
-        $(".main-nav").hide()
-        $(".mobile-barX").hide()
-        $(".welcome").hide()
+        $(".main-nav").hide();
+        $(".mobile-barX").hide();
+        $(".welcome").hide();
     }
 });
 
@@ -54,10 +54,10 @@ $(window).resize(function() {
 $(window).scroll(function() {
     if ($(this).scrollTop()) {
         if ($(window).width() >= 650) {
-            $(".mobile-barX").hide()
+            $(".mobile-barX").hide();
         } else {
-            $(".mobile-barX").hide()
-            $(".main-nav").hide()
+            $(".mobile-barX").hide();
+            $(".main-nav").hide();
         }
     }
 });
@@ -65,25 +65,25 @@ $(window).scroll(function() {
 // Hide & show menu & welcome banner when reload & launch the webpage
 $(function() {
     if ($(window).width() >= 650) {
-        $(".main-nav").show()
-        $(".welcome").show()
+        $(".main-nav").show();
+        $(".welcome").show();
     }
 });
 
 // Photo slideshow with 5 seconds interval and 3 seconds delay
 $(function() {
-    var images = $('.intro-slide-show-img img'),
-        index = 0
-    setInterval(looper, 5000)
-    looper()
+    var images = $('.intro-slide-show-img img');
+    index = 0;
+    setInterval(looper, 5000);
+    looper();
 
     function looper() {
 
-        images.eq(index).fadeIn(2500).delay(3000).fadeOut(0)
-            //using mode is the best but it gives bad lai over images on top
-            //index = (index + 1) % images.length
-        index += 1
+        images.eq(index).fadeIn(2500).delay(3000).fadeOut(0);
+        //using mode is the best but it gives bad lai over images on top
+        //index = (index + 1) % images.length
+        index += 1;
         if (index > images.length)
-            index = 0
+            index = 0;
     }
 })
