@@ -73,9 +73,10 @@ $(function() {
 
 // Photo slideshow with 5 seconds interval and 3 seconds delay
 
-$(function() {
-    $('.intro-slide-show-img img').hide();
-});
+// $(function() {
+//     $('.intro-slide-show-img img').show();
+// });
+
 $(function() {
     var images = $('.intro-slide-show-img img'),
         index = 0;
