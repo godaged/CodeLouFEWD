@@ -172,8 +172,9 @@
         background-image: url("../img/SlideBG.jpg");
         border-radius: 1%;
         margin: 5px auto;
-        width: 100%;
-        height: 200px;
+        /* width: 100%; */
+        height: 300px;
+        resize: both;
         background-repeat: no-repeat;
         background-position: center;
         /* background-attachment: inherit; */
@@ -182,8 +183,9 @@
     
     .intro-slide-show-img img {
         position: inherit;
-        width: 100%;
-        height: 200px;
+        /* width: 100%; */
+        height: 300px;
+        resize: both;
         border-radius: .5%;
         display: none;
         margin: 0 auto;
@@ -411,11 +413,11 @@
             text-align: center;
         }
         .intro-slide-show-img {
-            height: 372px;
+            height: 472px;
         }
         .intro-slide-show-img img {
             width: 100%;
-            height: 372px;
+            height: 472px;
         }
         /* picture container */
         /* set up two columns */
