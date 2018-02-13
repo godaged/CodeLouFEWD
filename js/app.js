@@ -72,8 +72,8 @@ $(function() {
 
 // Photo slideshow with 5 seconds interval and 3 seconds delay
 $(function() {
-    var images = $('.intro-slide-show-img img');
-    index = 0;
+    var images = $('.intro-slide-show-img img'),
+        index = 0;
     setInterval(looper, 5000);
     looper();
 
