@@ -82,15 +82,44 @@
         transition: all 500ms linear;
     }
     
-    .main-nav {
+    .mobile-nav {
         position: fixed;
         background: rgba(55, 71, 96, 0.8);
-        width: 100px;
+        width: 110px;
         padding: 3px;
         list-style: none;
         /* left: -200px; */
         /*to hide the menu*/
-        display: none;
+        /* display: none; */
+        transition: all 500ms linear;
+        z-index: 1;
+    }
+    
+    .mobile-nav a {
+        display: block;
+        padding: 3px 5px;
+        text-decoration: none;
+        border-bottom: .0125rem solid rgb(106, 111, 131);
+    }
+    
+    .mobile-nav li:nth-child(1) {
+        border-top: .0125rem solid rgb(106, 111, 131);
+    }
+    
+    .mobile-nav li a:hover {
+        background-color: rgba(197, 221, 223, .2);
+        /* rgb(52, 60, 96); */
+    }
+    
+    .main-nav {
+        position: fixed;
+        background: rgba(55, 71, 96, 0.8);
+        /* width: 100px; */
+        padding: 3px;
+        list-style: none;
+        /* left: -200px; */
+        /*to hide the menu*/
+        /* display: none; */
         transition: all 500ms linear;
     }
     
@@ -107,7 +136,7 @@
         position: absolute;
         display: none;
         left: 90px;
-        width: 300px;
+        width: 260px;
         background: rgba(55, 71, 96, 0.8);
     }
     /*******END NAVIGATION BAR*********/
@@ -131,7 +160,7 @@
         margin-top: -7.125rem;
         text-align: center;
         /* will not display @ mobile screen */
-        display: none;
+        /* display: none; */
         /* following displays a round transparent background */
         /* background-color: rgba(197, 221, 223, .3);
         padding: 45px 0;
@@ -163,13 +192,14 @@
     .intro-slide-show {
         margin: 5px auto;
         padding: 10px;
-        text-align: center;
+        /* text-align: center; */
         /* border: .0625rem solid rgb(31, 29, 29); */
         border-radius: 1px;
     }
     
     .intro-slide-show-img {
-        background-image: url("../img/SlideBG.jpg");
+        position: relative;
+        /* background-image: url("../img/SlideBG.jpg"); */
         border-radius: 1%;
         margin: 5px auto;
         width: 100%;
@@ -181,8 +211,8 @@
     }
     
     .intro-slide-show-img img {
-        position: inherit;
-        width: 100%;
+        position: absolute;
+        width: calc(100vw - 40px);
         height: 200px;
         border-radius: .5%;
         display: none;
@@ -190,7 +220,14 @@
     }
     /* Metro Louisville Section */
     
-    .metro-Lou-p {
+    .metro h2 {
+        font-family: 'Aref Ruqaa', serif;
+        font-size: 1rem;
+        /* font-weight: bold; */
+        text-align: center;
+    }
+    
+    .metro p {
         margin: 0 auto;
         padding: .5rem;
         text-align: justify;
@@ -322,6 +359,17 @@
     /* Media Queries  */
     /* Min width 650 pixel and above screen size */
     
+    @media screen and (max-width:649px) {
+        .mobile-nav,
+        .mobile-barX {
+            display: none;
+            /* visibility: hidden; */
+        }
+        /* .welcome {
+            display: none;
+        } */
+    }
+    
     @media screen and (min-width:650px) {
         h1 {
             /*16px = 1em*/
@@ -341,8 +389,10 @@
             height: 477px;
         }
         /* hide mobile features */
-        .mobile-bar,
         .mobile-barX {
+            display: none;
+        }
+        .mobile-bar {
             display: none;
         }
         /*NAVIGATION BAR*/
@@ -394,13 +444,26 @@
             display: none;
             margin: 0;
             left: 0;
+        }
+        .museum-list {
             width: 260px;
+        }
+        .food-list {
+            width: 150px;
+        }
+        .hotel-list {
+            width: 230px;
         }
         /*END NAVIGATION BAR*/
         /* Welcom message section */
         .welcome {
             margin-top: -14.125rem;
             color: white;
+        }
+        .metro h2 {
+            font-size: 1.8rem;
+            text-align: center;
+            font-weight: bold;
         }
         .welcome h2 {
             font-size: 2.3rem;
