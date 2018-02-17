@@ -388,6 +388,9 @@
             background-size: cover; */
             height: 477px;
         }
+        .main-header h1 {
+            padding-top: 70px;
+        }
         /* hide mobile features */
         .mobile-barX {
             display: none;
