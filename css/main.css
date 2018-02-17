@@ -397,7 +397,7 @@
         }
         /*NAVIGATION BAR*/
         .main-nav {
-            position: relative;
+            position: fixed;
             /* background-color: rgb(80, 92, 134); */
             width: 100%;
             margin-left: 5px;
