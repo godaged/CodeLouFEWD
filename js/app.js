@@ -109,3 +109,16 @@ $(function() {
         }
     }
 })
+
+//scroll animation to navigate to internal link
+$(function() {
+    $('.explore').click(function() {
+        $('html, body').animate({ scrollTop: $('#pic').offset().top }, 700);
+    })
+});
+
+$(function() {
+    $('.home').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 700);
+    })
+});

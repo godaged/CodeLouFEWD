@@ -35,6 +35,7 @@ The class(es) I created are:
 13. .pic-rows, .pic-columns -> uses flex-box and controls columns of the page to responsive when resize
 14. .main-footer -> footer section color, background image and mix the background image and body color
 15. .social-media -> Social media icons on the footer and uses flex-box
+16. .home & .explore -> this will navigate to internal links ID #pic & #home when click home & Explore buttons on the menu
 ```
 ## Custom JavaScript Functions
 ```
@@ -46,4 +47,5 @@ The javascript functions I created are:
 2. click function to show and hide mobile menu
 3. resize & scroll functions to hide mobile menus if did not close by the user
 4. slide show functions - fade in & fade out slides within 5 seconds also it animates image toggling to left for all images and then starts image overlay for all iamages.
+5. Navigate to internal links ID #pic & #home when click home & Explore buttons on the menu
 ```
