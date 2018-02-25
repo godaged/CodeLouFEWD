@@ -64,7 +64,7 @@
     
     .mobile-bar {
         width: 60px;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         padding: 10px;
         color: white;
         /*Hamberger icon Visible*/
@@ -74,7 +74,7 @@
     /* mobile X to close mobile menu*/
     
     .mobile-barX {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         padding: 10px;
         color: white;
         /*Mobile X icon Not Visible*/
@@ -166,6 +166,7 @@
         /* following lines will center the Welcome message text */
         width: 600px;
         left: 50%;
+        /*left: 50% and translateX(-50%) will center welcome*/
         transform: translateX(-50%);
         /* following will overlay the Welcome text on the background image */
         margin-top: -7.125rem;
@@ -290,7 +291,7 @@
         font-size: 1.4rem;
         font-family: 'Aref Ruqaa', serif;
         font-weight: bolder;
-        padding-top: 30px;
+        padding-top: 16px;
         text-align: center;
     }
     /* set flex-box 1 row 3 columns */
@@ -353,6 +354,9 @@
         background-repeat: no-repeat;
         height: 407px;
         text-align: center;
+        background-position: center;
+        background-attachment: inherit;
+        background-size: cover;
     }
     /* social media icon bar */
     /* Change ICON size at HTML class fa-2x or fa-3x*/

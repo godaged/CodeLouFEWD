@@ -58,28 +58,11 @@ $(function() {
                 $(".mobile-barX").hide();
                 $(".main-nav").hide();
             }
-            // else {
-            //     $(".mobile-barX").hide();
-            //     $(".main-nav").show();
-            // }
         }
+
     })
 });
 
-// Hide & show menu & welcome banner when reload & launch the webpage
-// $(function() {
-//     if ($(window).width() >= 650) {
-//         $(".main-nav").show();
-//         $(".welcome").show();
-//     }
-// });
-
-
-// Photo slideshow with 5 seconds interval and 3 seconds delay
-
-// $(function() {
-//     $('.intro-slide-show-img img').hide();
-// });
 
 $(function() {
     var images = $('.intro-slide-show-img img'),
@@ -113,7 +96,9 @@ $(function() {
 //scroll animation to navigate to internal link
 $(function() {
     $('.explore').click(function() {
-        $('html, body').animate({ scrollTop: $('#pic').offset().top }, 700);
+        //following (-40) will move h2 element below the menu bar
+        var p = $('#pic').offset().top - 40;
+        $('html, body').animate({ scrollTop: p }, 700);
     })
 });
 
@@ -122,3 +107,13 @@ $(function() {
         $('html, body').animate({ scrollTop: 0 }, 700);
     })
 });
+
+
+
+//     alert($('.pic-container h2').offset().top - $(document).scrollTop());
+//     alert($(document).scrollTop());
+//     var p = $('.pic-container h2').position().top;
+//     if ($('.pic-container h2').position().top - $(document).scrollTop() != 0) {
+//     if ($(document).scrollTop() != $('.pic-container h2').position().top) {
+//     $('.pic-container h2').css('padding-top', '16px');
+//
