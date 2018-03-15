@@ -1,0 +1,509 @@
+/*Font Family*/
+/*******Global Selector*******/
+* {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+/*******HTML Selectors*******/
+body {
+  font-family: Helvetica, Verdana, "Segoe UI", sans-serif, serif;
+  /* background-image: linear-gradient( #50686a, #cbd9fe); */ }
+
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  padding: 0; }
+  .main-header h1 {
+    text-align: center;
+    color: #fff; }
+
+h2 {
+  font-size: 1rem;
+  text-transform: none;
+  margin: 0;
+  padding: 0; }
+  .welcome h2 {
+    font-size: 1rem;
+    font-family: 'Aref Ruqaa', serif;
+    font-weight: bold;
+    text-align: center; }
+  .metro h2 {
+    font-size: 1.4rem;
+    font-family: 'Aref Ruqaa', serif;
+    font-weight: bold;
+    text-align: center; }
+  .pic-container h2 {
+    font-size: 1.4rem;
+    padding-top: 16px;
+    font-family: 'Aref Ruqaa', serif;
+    font-weight: bold;
+    text-align: center; }
+  .events h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
+
+h3 {
+  font-size: .75rem;
+  text-transform: none;
+  margin: 0;
+  padding: 0; }
+  .welcome h3 {
+    font-size: 1rem;
+    font-family: 'Oregano', cursive;
+    text-align: center; }
+  .pic-columns h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2f2e4d;
+    margin-top: 20px;
+    padding: 5px 0 10px 0;
+    border-radius: 3%;
+    font-family: 'Aref Ruqaa', serif;
+    font-weight: bold;
+    text-align: center; }
+
+p {
+  margin-top: 0;
+  margin-right: .5rem;
+  margin-bottom: 0;
+  margin-Left: 0; }
+  .metro p {
+    margin: 0 auto;
+    padding: .5rem;
+    text-align: justify; }
+  .pic-columns p {
+    margin: 0 auto;
+    padding: .5rem;
+    text-align: justify; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  .social-media ul {
+    width: 200px 0 auto; }
+
+li {
+  margin: 0;
+  padding: 0; }
+  .social-media li {
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bolder; }
+  .mobile-nav li:nth-child(1) {
+    border-top: 0.0125rem solid #6a6f83; }
+
+a {
+  text-transform: none;
+  text-decoration: none; }
+  a:link {
+    text-decoration: none; }
+  .mobile-nav a {
+    display: block;
+    padding: 3px 5px;
+    border-bottom: 0.0125rem solid #6a6f83; }
+  .main-nav li a {
+    color: #fff; }
+  .mobile-nav li a:hover {
+    background-color: rgba(197, 221, 223, 0.2);
+    /* rgb(52, 60, 96); */ }
+
+img {
+  border: none; }
+  .intro-slide-show-img img {
+    position: absolute;
+    width: calc(100vw - 20px);
+    height: 200px;
+    border-radius: .5%;
+    display: none;
+    margin: 0 auto; }
+  .pic-columns img {
+    /*will not overlap seeting for mobile*/
+    max-width: 340px;
+    max-height: 390px;
+    display: block;
+    /*center image*/
+    margin: 20px auto;
+    border-radius: 3%;
+    /*attribute selector contains .jpg*/ }
+  .pic-columns img[src*=".jpg"] {
+    border: 0.125rem solid #1f1d1d; }
+
+/*******  Custom Classes  *******/
+/*******  Header Classes  *******/
+.main-header {
+  height: 200px;
+  /* Following Linear gradient to match back ground colour. Fully transparent till 80% then start white color gradient & @ 100% no transparent */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 80%, white 100%), url("../img/New BridgeAtNight.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: inherit;
+  background-size: cover; }
+
+/*******  Navigation Classes  *******/
+/* Mobile Hamberger icon*/
+.mobile-bar {
+  /*Hamberger icon Visible*/
+  display: visible;
+  width: 60px;
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #fff;
+  transition: all 500ms linear; }
+
+/* mobile X to close mobile menu*/
+.mobile-barX {
+  /*Mobile X icon Not Visible*/
+  display: none;
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #fff;
+  transition: all 500ms linear; }
+
+.mobile-nav {
+  z-index: 1;
+  width: 110px;
+  position: fixed;
+  background: rgba(55, 71, 96, 0.8);
+  padding: 3px;
+  list-style: none;
+  transition: all 500ms linear; }
+
+.main-nav {
+  position: fixed;
+  background: rgba(55, 71, 96, 0.8);
+  padding: 3px;
+  list-style: none;
+  transition: all 500ms linear; }
+
+/*Sub Menu Item display false*/
+.list-hotel, .list-museum, .list-food {
+  margin-top: -25px;
+  position: absolute;
+  display: none;
+  left: 90px;
+  background: rgba(55, 71, 96, 0.8); }
+
+.list-hotel {
+  width: 230px; }
+.list-museum {
+  width: 260px; }
+.list-food {
+  width: 150px; }
+
+/*******END NAVIGATION BAR*********/
+/*******  Main Content Classes  *******/
+/*background color for the body content area*/
+/***NOT WORKIN currently If needed differnet colotr than white configure here***/
+.background-color {
+  background-color: radial-gradient(0% 0%, 60% 60%, #b13f3f, white); }
+
+/* Welcome message */
+.welcome {
+  color: #fff;
+  position: absolute;
+  /* following lines will center the Welcome message text */
+  width: 100vw;
+  left: 50%;
+  /*left: 50% and translateX(-50%) will center welcome*/
+  transform: translateX(-50%);
+  /* following will overlay the Welcome text on the background image */
+  margin-top: -7.125rem;
+  text-align: center;
+  /* will not display @ mobile screen */
+  /* display: none; */
+  /* following displays a round transparent background */
+  /* background-color: rgba(197, 221, 223, .3);
+  padding: 45px 0;
+  border-radius: 50%; */ }
+
+/* slide show */
+.intro-slide-show {
+  margin: 5px auto;
+  padding: 10px;
+  /* border: .0625rem solid rgb(31, 29, 29); */
+  border-radius: 1px; }
+  .intro-slide-show-img {
+    position: relative;
+    /* background-image: url("../img/SlideBG.jpg"); */
+    border-radius: 1%;
+    margin: 5px auto;
+    width: 100vw;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: inherit; */
+    /* background-size: cover; */ }
+
+/* Metro Louisville Section */
+.metro {
+  text-decoration: none; }
+
+/* Make First line of each paragraph bold & italic */
+.first-line {
+  font-family: Helvetica, Verdana, "Segoe UI", sans-serif, serif; }
+  .first-line::first-line {
+    font-weight: bold;
+    font-style: italic; }
+  .first-line::first-letter {
+    position: static;
+    float: left;
+    color: #fff;
+    font-family: "Times New Roman";
+    font-size: 3rem;
+    padding: 1px 7px;
+    background: #2f2e4d;
+    margin: 2px 10px 0 0;
+    border-radius: 15%; }
+
+/* Drop Caps first letter */
+/* Main Content of the body */
+.main-content {
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #dddde7;
+  border-radius: .5rem; }
+
+/* Explore Louisville Picture container */
+#pic {
+  transition: all 1s ease-out; }
+
+/* transition: color .5s, border .5s;
+    transition-property: color, border;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: initial, initial;
+    transition-delay: initial, initial; */
+/* set flex-box 1 row 3 columns */
+.pic-container {
+  text-align: justify; }
+
+.pic-rows {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.pic-columns {
+  padding: 0 .5rem;
+  /* all .jpg images will have a border */ }
+
+/*sibling selector to target immediate sibling left margin*/
+/*
+.pic-columns+.pic-columns {
+ padding-left: 50px;
+}*/
+/* Events Section */
+.events {
+  /*background: beige;*/
+  margin: 0 auto;
+  padding: 0 .5rem; }
+
+/* footer section */
+.main-footer {
+  background-color: #2f2e4d;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 70%, white 100%), url("../img/LouisvilleCityKy.jpg");
+  background-repeat: no-repeat;
+  height: 407px;
+  text-align: center;
+  background-position: center;
+  background-attachment: inherit;
+  background-size: cover; }
+
+/* social media icon bar */
+/* Change ICON size at HTML class fa-2x or fa-3x*/
+.social-media {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*background-color: rgba(197, 221, 223, .3);*/ }
+
+/* Media Queries  */
+/* Min width 650 pixel and above screen size */
+@media screen and (max-width: 649px) {
+  .mobile-nav,
+  .mobile-barX {
+    display: none;
+    /* visibility: hidden; */ } }
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 2.5rem; }
+    .main-header h1 {
+      padding-top: 70px; }
+
+  h2 {
+    /*16px = 1em*/
+    font-size: 1.5rem; }
+    .metro h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      font-weight: bold; }
+    .welcome h2 {
+      font-size: 2.3rem;
+      text-align: center; }
+    .pic-container h2 {
+      font-size: 1.8rem;
+   /* font-family: 'Aref Ruqaa', serif;
+font-weight: bolder;
+padding-top: 30px;
+text-align: center; */ }
+
+  .welcome h3 {
+    font-size: 1.4rem;
+    text-align: center; }
+  .pic-container h3 {
+    margin-left: 50px;
+    margin-right: 50px; }
+
+  .main-nav li {
+    float: left;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-right: .3rem;
+    margin-top: .25rem;
+    list-style: none;
+    margin-bottom: 5px;
+    border-radius: .25rem; }
+
+  .main-nav li a {
+    display: block;
+    color: #fff;
+    text-align: left;
+    padding: .625rem;
+    border: 0.0125rem solid #6a6f83; }
+  .main-nav li a:hover {
+    background-color: rgba(197, 221, 223, 0.2);
+    /* rgb(52, 60, 96); */ }
+
+  /* main header picture size */
+  .main-header {
+   /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)100%), url("../img/New BridgeAtNight.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: inherit;
+background-size: cover; */
+    height: 477px; }
+
+  /* hide mobile features */
+  .mobile-barX {
+    display: none; }
+
+  .mobile-bar {
+    display: none; }
+
+  /*NAVIGATION BAR*/
+  .main-nav {
+    position: fixed;
+    /* background-color: rgb(80, 92, 134); */
+    width: 100%;
+    margin-left: 0;
+    padding-left: 5px;
+    /* left: 0; */
+    height: 3.75rem;
+    z-index: 1; }
+
+  .hotel {
+    width: 75px; }
+
+  .museum {
+    width: 100px; }
+
+  .food {
+    width: 70px; }
+
+  /* sub menu */
+  .list-museum, .list-food, .list-hotel {
+    display: none;
+    margin: 0;
+    left: 0; }
+
+  .list-museum {
+    width: 260px; }
+  .list-food {
+    width: 150px; }
+  .list-hotel {
+    width: 230px; }
+
+  /*END NAVIGATION BAR*/
+  /* Welcom message section */
+  .welcome {
+    margin-top: -14.125rem;
+    color: #fff; }
+
+  .intro-slide-show-img {
+    width: 100%;
+    height: 372px; }
+    .intro-slide-show-img img {
+      height: 372px; }
+
+  /* picture container */
+  /* set up two columns */
+  .pic-columns {
+    width: 50%; }
+    .pic-columns img {
+      max-width: 95%;
+      max-height: 95%; } }
+@media screen and (min-width: 1200px) {
+  .screen-max-width {
+    max-width: 1200px; }
+
+  h1 {
+    /*16px = 1em*/
+    font-size: 2.5rem; }
+
+  h2 {
+    /*16px = 1em*/
+    font-size: 1.5rem; }
+    .welcome h2 {
+      font-size: 2.5rem;
+      /* font-weight: bold; */
+      text-align: center; }
+
+  h3 .welcome h3 {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    text-align: center; }
+
+  .intro-slide-show-img img {
+    width: 100%;
+    height: 572px; }
+  .pic-columns img {
+   /* max-width: 240px;
+max-height: 275px; */
+    max-width: 95%;
+    max-height: 95%; }
+
+  /* main header section */
+  .main-header {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 80%, white 100%), url("../img/New BridgeAtNight.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: inherit;
+    background-size: cover;
+    height: 577px; }
+
+  /* hide mobile only menus */
+  .mobile-bar,
+  .mobile-barX {
+    display: none; }
+
+  /* set up the height of the welcome message */
+  .welcome {
+    margin-top: -17.125rem; }
+
+  /* slide show */
+  .intro-slide-show-img {
+    width: 100%;
+    height: 572px; }
+
+  /* Explore louisville picture container */
+  .pic-columns {
+    width: 33.33%; } }
+
+/*# sourceMappingURL=styles.css.map */

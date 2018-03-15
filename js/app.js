@@ -1,27 +1,27 @@
 // show sub menu when mouse over
 $(".hotel").mouseover(function() {
-    $(".hotel-list").show();
+    $(".list-hotel").show();
 });
 
 $(".museum").mouseover(function() {
-    $(".museum-list").show();
+    $(".list-museum").show();
 });
 
 $(".food").mouseover(function() {
-    $(".food-list").show();
+    $(".list-food").show();
 });
 
 // hide sub menu when mouseout
 $(".hotel").mouseout(function() {
-    $(".hotel-list").hide();
+    $(".list-hotel").hide();
 });
 
 $(".museum").mouseout(function() {
-    $(".museum-list").hide();
+    $(".list-museum").hide();
 });
 
 $(".food").mouseout(function() {
-    $(".food-list").hide();
+    $(".list-food").hide();
 });
 
 //Click Hamberger to show mobile menu
