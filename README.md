@@ -2,30 +2,26 @@
 
 ## Description
 ```
-This is louisville city guide page. It has links to all the main attractions in the city. 
+This is louisville city guide page. It has links to most attractions in the city. 
 It gives a user to explore different areas of the city and get an idea about the city.
-
+Technologies used:
+    HTML, CSS, JavaScript
+    Used SASS to convert Main.css to styles.scss file then generated styles.css
 ```
-
-
-
 ## Custom CSS Classes
 ```
 The class(es) I created are:
-
-1. class name ex( .main-info-section )
-.. what class does, ex( adds padding & changes background color of .main-info-section )
 
 1.  .main-header -> Includes Site Name and main Navigation Bar
     Sets the background color, image, size and padding for the heading
     Background image gradient was set to match with the body background
 
-2.  .mobile-bar, .mobile-barX -> open and close mobile menu
+2.  .mobile, .mobile-bar, .mobile-barX -> open and close mobile menu
 
 3.  .mobile-nav -> mobile navigation menus when the screen size les than 650 pixels
 4.  .main-nav -> desktop/laptop screen navigation menu when the screen size greater than 650 pixels
-5.  .hotel-list, .museum-list, .food-list -> sub menus
-6.  .background-color -> set background color if needed
+5.  .list-hotel, .list-museum, .list-food -> sub menus in main menu
+6.  .background-color -> set background color if needed to change background color
 7.  .welcome -> Welcome message
 8.  .intro-slide-show, .intro-slide-show-img -> slide show animation
 9.  .metro -> metro section
