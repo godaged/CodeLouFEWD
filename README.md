@@ -1,4 +1,5 @@
-# CodeLou_FrontEnd
+LOUISVILLE CITY GUIDE
+https://godaged.github.io/CodeLouFEWD/
 
 ## Description
 ```
@@ -37,8 +38,7 @@ The class(es) I created are:
 ```
 The javascript functions I created are:
 
-1. function name ex( animate() )
-.. what function does ex( animate() is used to move the elements in the info div across the screen)
+
 1. Mouseover & mouseout functions to show and hide drop down menus and sub menus
 2. click function to show and hide mobile menu
 3. resize & scroll functions to hide mobile menus if did not close by the user
